@@ -17,5 +17,8 @@ for(let x in marks){
 // Question - 3
 let cn = 4;
 let i;
-while ( i != cn)
+while ( i != cn){
 i = prompt("enter the correct number");
+    console.log("Try Again!!");
+}
+console.log("You enterd correct number");
