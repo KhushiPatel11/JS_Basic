@@ -1,1 +1,7 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non hic repudiandae quibusdam eius molestiae reprehenderit in nisi labore amet assumenda, tempore fuga doloribus incidunt, sequi velit facilis voluptas reiciendis? In recusandae doloremque iste nemo dolores non enim vel nihil.
+Git Command:
+git add .
+git commit -m "Your commit message"
+git push origin main
+
+
+git push:
