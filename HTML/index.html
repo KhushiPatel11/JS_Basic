@@ -1,36 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction About JavaScript</title>
     <!-- External CSS -->
-     <link rel="stylesheet" href="/CSS/index.css">
-     <!-- external js -->
-      <!-- <script src="/JS/index.js"></script> -->
-      <!-- <script src="/JS/datatypes.js"></script> --> 
-      <!-- <script src="/JS/practiceset1.js"></script> -->
-      <!-- <script src="/JS/oprator.js"></script> -->
-      <!-- <script src="/JS/conditional.js"></script> -->
-      <!-- <script src="/JS/switch.js"></script> -->
-      <!-- <script src="/JS/practiceset2.js"></script> -->
-      <!-- <script src="/JS/loops.js"></script> -->
-      <!-- <script src="/JS/function.js"></script> -->
-      <!-- <script src="/JS/practiceset3.js"></script> -->
-      <!-- <script src="/JS/String.js"></script> -->
-      <!-- <script src="/JS/StringMethod.js"></script> -->
-      <!-- <script src="/JS/practiceset4.js"></script> -->
-      <!-- <script src="/JS/array.js"></script> -->
-      <script src="/JS/arrmethod.js"></script>
+    <link rel="stylesheet" href="/CSS/index.css">
+    <!-- external js -->
+    <!-- <script src="/JS/index.js"></script> -->
+    <!-- <script src="/JS/datatypes.js"></script> -->
+    <!-- <script src="/JS/practiceset1.js"></script> -->
+    <!-- <script src="/JS/oprator.js"></script> -->
+    <!-- <script src="/JS/conditional.js"></script> -->
+    <!-- <script src="/JS/switch.js"></script> -->
+    <!-- <script src="/JS/practiceset2.js"></script> -->
+    <!-- <script src="/JS/loops.js"></script> -->
+    <!-- <script src="/JS/function.js"></script> -->
+    <!-- <script src="/JS/practiceset3.js"></script> -->
+    <!-- <script src="/JS/String.js"></script> -->
+    <!-- <script src="/JS/StringMethod.js"></script> -->
+    <!-- <script src="/JS/practiceset4.js"></script> -->
+    <!-- <script src="/JS/array.js"></script> -->
+    <!-- <script src="/JS/arrmethod.js"></script> -->
+    <!-- <script src="/JS/event.js"></script> -->
+    <!-- <script src="/JS/alert_pro_con.js"></script> -->
+    <!-- <script src="/JS/bom_dom.js"></script> -->
 </head>
+
+<!-- This is for JSON -->
+<!-- myJson = `{
+    "name": "Khushi",
+    "score": 11,
+    "isAdmin": false,
+    "licence": null
+}`;
+
+
+JSON.parse(myJson); -->
+<!-- <body onload="myLoadFunction()"> -->
 <body>
-    <p id="number">www</p> 
+    <span>hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</span>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About US</li>
+            <li>Help</li>
+        </ul>
+     </nav>
+    <p id="number">www</p>
+
+    <!-- Onclick Event -->
+    <button type="button" id="btn" onclick="timeDate()">What is the time?</button>
+    <p id="demo"></p>
+
+    <!-- Onchange Event -->
+    <select name="select" id="mySelect" onchange="myFunction()">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Mango">Mango</option>
+        <option value="Orange">Orange</option>
+    </select>
+    <p id="demo1"></p>
+
+    <!-- onmouseover and onmouseout event -->
+    <img src="/IMG/smile.jfif" alt="not found" width="32" height="32" onmouseover="bigImg(this)"
+        onmouseout="normalImg(this)"><br>
+
+    <!-- Onkeydown event -->
+    <input type="text" onkeydown="myKeyFuntion()">
+    <p id="demo2"></p>
+
+
+
+
+
+
+
+
+
     <!-- <form action="" method="get">
         <input type="number" name="box1" id="num1" width="10">
         <input type="number" name="box1" id="num1">
         <input type="number" name="box1" id="num2">
     </form> -->
-<!-- 
+    <!-- 
     <script>
         document.getElementById("num1").value = 5;
         document.getElementById("num2").value = 5;
@@ -39,4 +93,5 @@
         console.log(inputValue)
     </script> -->
 </body>
+
 </html>

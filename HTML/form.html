@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/IMG/person.png" type="image/x-icon">
+  <title>Form Using HTML | CSS | JS</title>
+  <!-- External css -->
+  <link rel="stylesheet" href="/CSS/form.css">
+  <!-- Bottstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <h2 class="Signup my-3">Make Your Account First!!</h2>
+  <div class="container">
+    <!-- form-content -->
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12 signup-form" id="signupForm">
+        <!-- Signup Form -->
+        <form id="myForm">
+    <div class="mb-3">
+        <label for="signname" class="form-label">Full Name <span class="required">*</span></label>
+        <input type="text" class="form-control" id="signname" placeholder="Enter Your Full Name">
+        <span id="signnameError"></span>
+    </div>
+    <div class="mb-3">
+        <label for="signemail" class="form-label">Email address <span class="required">*</span></label>
+        <input type="email" class="form-control" id="signemail" placeholder="Enter Your E-mail">
+        <span id="signemailError"></span>
+    </div>
+    <div class="mb-3">
+        <label for="new-password" class="form-label">Password <span class="required">*</span></label>
+        <input type="password" class="form-control" id="new-password" placeholder="Enter Your Password">
+        <span id="new-password-error"></span>
+    </div>
+    <div class="mb-3">
+        <label for="current-password" class="form-label">Confirm Password <span class="required">*</span></label>
+        <input type="password" class="form-control" id="current-password" placeholder="Enter Your Confirm Password">
+        <span id="confirm-password-error"></span>
+    </div>
+    <div class="mb-3">
+        <label for="sphone" class="form-label">Phone Number <span class="required">*</span></label>
+        <input type="number" class="form-control" id="sphone" placeholder="Enter Your Phone Number">
+        <span id="sPhoneError"></span>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="termsCheck">
+        <label class="form-check-label" for="termsCheck">I accept Terms and Conditions.<span class="required">*</span></label>
+        <span id="termsCheckError" class="error-message"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Signup</button>
+    <div class="login-acc">
+      Already have an account? <a href="#" class="login-link" onclick="showLoginForm()">Login Here</a>
+    </div>
+</form>
+
+      </div>
+      <!-- login-form hidden initially -->
+      <div class="col-lg-6 col-md-12 login-form" id="loginForm" style="display: none;">
+        <form id="myLoginForm">
+          <div class="mb-3">
+            <label for="loginName" class="form-label">Full Name <span class="required">*</span></label>
+            <input type="text" class="form-control" id="loginName" placeholder="Enter Your Full Name">
+            <span id="loginNameError"></span>
+          </div>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address <span class="required">*</span></label>
+            <input type="email" class="form-control" id="loginEmail" placeholder="Enter Your E-mail">
+            <span id="loginEmailError"></span>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password <span class="required">*</span></label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="Enter Your Password">
+            <span id="loginPasswordError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <div class="signup-acc">
+            Don't have an account? <a href="#" class="signup-link" onclick="showSignupForm()">Sign Up Here</a>
+          </div>
+        </form>
+      </div>
+
+      <!-- text-content -->
+      <!-- For signup text -->
+      <div class="col-lg-6 col-md-12 text-content" id="signupText">
+        <h2 class="welcome">Welcome!!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facilis eius libero placeat rem eaque
+          esse unde dignissimos at sit aperiam rerum, labore nam repellendus quidem voluptas cupiditate blanditiis
+          consectetur.</p>
+      </div>
+      
+      <!-- For login text -->
+      <div class="col-lg-6 col-md-12 text-content" id="loginText" style="display: none;">
+        <h2 class="welcome">Welcome Again!!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facilis eius libero placeat rem eaque
+          esse unde dignissimos at sit aperiam rerum, labore nam repellendus quidem voluptas cupiditate blanditiis
+          consectetur.</p>
+      </div>
+
+    </div>
+  </div>
+
+  
+   <!-- External JS -->
+   <script src="/JS/form.js"></script>
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

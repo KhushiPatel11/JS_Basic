@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(248, 232, 213)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.count{
+    color: #000!important;
+}
+
+.buttons {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+
+.buttons h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.stopwatch{
+    background-image:
+        linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url('/IMG/nature.jpg');
+    width: 50%;
+    height: 50%;
+}
+
+h1{
+    color: #fff!important;
+}
+
+.buttons img{
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
